@@ -1,0 +1,211 @@
+/* Main Container */
+.tutorials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* List Section */
+.tutorials-list-section {
+  flex: 1;
+}
+
+/* Search Components */
+.search-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem 0 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.search-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.search-button:hover {
+  background-color: #2563eb;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+  
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+}
+
+.tutorials-table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.tutorials-table th,
+.tutorials-table td {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tutorials-table th {
+  font-size: 0.75rem;
+  font-weight: 00;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #bbbec6;
+}
+
+/* Table Rows */
+.tutorials-table tr {
+  cursor: pointer;
+  background-color: white;
+}
+
+.tutorials-table tr:hover:not(.active-row) {
+  background-color: #f9fafb;
+}
+
+.tutorials-table .active-row {
+  background-color: #dbeafe;
+}
+
+/* Cell Styles */
+.title-cell {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.description-cell {
+  font-size: 0.875rem;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20rem;
+}
+
+.date-cell {
+  font-size: 0.875rem;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-badge.published {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.pending {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Action Buttons */
+.actions-cell {
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.edit-link {
+  color: #4f46e5;
+  margin-right: 0.75rem;
+}
+
+.edit-link:hover {
+  color: #3730a3;
+}
+
+.delete-button {
+  color: #dc2626;
+}
+
+.delete-button:hover {
+  color: #991b1b;
+}
+
+/* Remove All Button */
+.remove-all-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.remove-all-button:hover {
+  background-color: #dc2626;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modal-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-actions button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #e5e7eb;
+  color: #111827;
+}
